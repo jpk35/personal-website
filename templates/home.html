@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %}
+<h1 class="name-banner">Jennifer Kades</h1>
+{% endblock %}
+
+{% block content %}
+<div class="home-content">
+    <div class="blurb">
+        <p>Hello! I am a PhD Candidate in Economics at Duke University. </p>
+        <p>I study labor economics in the U.S. and South Africa.</p>
+        <p>My research explores the role of non-standard variables--such as risk aversion, soft skills, or norms and
+            attitudes toward work--in shaping worker decisions and labor market outcomes.</p>
+    </div>
+    <div class="picture">
+        <img src="{{ url_for('static', filename='images/my_pic.jpg') }}" alt="Your Picture" class="profile-picture">
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

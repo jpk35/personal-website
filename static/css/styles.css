@@ -1,0 +1,156 @@
+/* Set html and body to full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex container */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+header {
+    /* background-color: #E6E6FA; /* Lavender */
+    background-color: #FCDEBE; /* Light Orange */
+    padding: 20px;
+    text-align: center;
+}
+
+.name-banner {
+    font-family: 'Shrikhand' ;
+    font-size: 3em;
+    color: #344E41; /* Brunswick Green (v dark) */
+    /* color: #00A878; /* Jade Green */
+    /* color: #008000; /* Green */
+    /* text-shadow: 3px 3px 1px #D8F1A0; /* Mindaro (lime-y green) */
+    text-shadow: 3px 3px 1px #588157; /* Fern green */
+    /* text-shadow: 2px 2px 4px #FFC0CB; /* Pink */
+    margin: 0;
+}
+
+nav ul.navigation {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul.navigation li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul.navigation li a {
+    text-decoration: none;
+    color: #344E41; /* Brunswick Green (v dark) */
+    font-weight: bold;
+}
+
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.blurb {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 15px; /* Adjust the value for more or less rounding */
+    /* Optional styling */
+    /* border: 2px solid #008000; */ /* Adds a green border */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */ /* Adds a subtle shadow */
+}
+
+/* Footer styles */
+footer {
+    background-color: #FCDEBE; /* Light Orange */
+    /*background-color: #E6E6FA; /* Lavender */
+    padding: 20px;
+    font-size: 1em;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-right a {
+    display: block;
+    margin: 5px 0;
+    color: #344E41; /* Brunswick Green (v dark) */
+    /*color: #008000; /* Green */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Icon styles */
+.footer-right i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-left, .footer-right {
+        margin-bottom: 20px;
+    }
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #344E41; /* Brunswick Green (v dark) */
+    /* color: #008000; /* Green */
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
